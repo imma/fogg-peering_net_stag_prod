@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+function _fogg_peering_net_stag_prod_profile {
+  local shome="${_fogg_peering_net_stag_prod_home:="$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
+  PATH="$shome/bin:$shome/exec:$PATH"
+  #export ANSIBLE_ROLES_PATH="$shome/roles${ANSIBLE_ROLES_PATH:+:${ANSIBLE_ROLES_PATH}}"
+  #export ANSIBLE_LIBRARY="$shome/library${ANSIBLE_LIBRARY:+:${ANSIBLE_LIBRARY}}"
+
+  FOGG_PEERING_NET_STAG_PROD_VERSION='0.0.1'
+}
+
+_fogg_peering_net_stag_prod_profile
