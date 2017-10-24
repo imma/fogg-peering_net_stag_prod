@@ -1,5 +1,5 @@
 module "peering_net_stag_prod" {
-  source = "git@github.com:imma/fogg-peering_net_stag_prod"
+  source = "module/imma/fogg-peering_net_stag_prod"
 
   remote_bucket   = "${var.remote_bucket}"
   remote_region   = "${var.remote_region}"
